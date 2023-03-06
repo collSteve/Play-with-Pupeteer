@@ -1,0 +1,2 @@
+MacPlayer.Html = '<iframe border="0" src="/static/player/ffzy.php?url='+MacPlayer.PlayUrl+'&jump='+MacPlayer.PlayNewLinkNext+'&title='+MacPlayer.Vodname+'&thumb='+MacPlayer.Thumb+'&id='+MacPlayer.Id+'&nid='+MacPlayer.Nid+'" width="100%" height="100%" marginWidth="0" frameSpacing="0" marginHeight="0" frameBorder="0" scrolling="no" vspale="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" noResize></iframe>';
+MacPlayer.Show();

@@ -12,5 +12,25 @@
     <main>
         <h1>Welcome to My Website</h1>  
     </main>
+
+    <pre class="mermaid">
+      graph TD 
+        A[Client] -->|tcp_123| B
+        B(Load Balancer) 
+        B -->|tcp_456| C[Server1] 
+        B -->|tcp_456| D[Server2]
+    </pre>
+
+    <pre class="mermaid">
+      pie title Pets adopted by volunteers
+        "Dogs" : 386
+        "Cats" : 85
+        "Rats" : 15
+    </pre>
+
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
   </body>
 </html>

@@ -2,6 +2,9 @@ import { Express } from "express";
 import { debug } from "console";
 import http from "http";
 import expressApp from "./expressApp";
+import { downloadM3U8, downloadSourceHtml, logNetwork, testScreenShot } from "../models/pupeteer";
+import path from "path";
+
 
 // import { Post, PostsGetRequestResponseObject } from "../models/post.model";
 
@@ -35,6 +38,13 @@ export default class Server {
     this.httpServer.on("listening", () => this.onListening());
 
     this.httpServer.listen(this.port);
+
+    const assetFolder = path.join(__dirname, '../../assets');
+
+    downloadM3U8('https://www.lgyy.cc/vodplay/68998-4-8.html', 'D:\\Documents\\kuang biao\\8');
+    // logNetwork('https://www.pornhub.com/view_video.php?viewkey=ph6358eef4b7d44', 0);
+    // testScreenShot('https://www.pornhub.com/view_video.php?viewkey=63d29737068ff', 'pp');
+    // downloadSourceHtml('https://www.lgyy.cc/vodplay/68998-4-6.html', `${assetFolder}/test.html`);
   }
 
   public getHttpServer() {
